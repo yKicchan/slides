@@ -1,0 +1,36 @@
+name: Deploy
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - "src/**"
+
+jobs:
+  build:
+    runs-on: ubunts-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Install Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: Remove docs
+        run: |
+          rm -rf docs/
+      - name: Copy Images to docs
+        run: |
+          mkdir -p docs
+          find src -type f \( -name "*.png" -o -name "*.jpg" \) | xargs -I {} sh -c 'mkdir -p "$(dirname {} | sed "s|^src|docs|")" && cp "{}" "$(echo {} | sed "s|^src|docs|")"'
+      - name: Generate OGP Images
+        run: npx @marp-team/marp-cli@latest -I src -o docs --image png
+      - name: Build Marp slides
+        run: npx @marp-team/marp-cli@latest -I src -o docs
+      - name: Deploy to Github Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./docs
+          destination_dir: ./docs

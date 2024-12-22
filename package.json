@@ -6,12 +6,11 @@
   "keywords": [],
   "author": "yKicchan",
   "scripts": {
-    "marp": "marp --theme-set theme.css",
-    "dev": "pnpm marp -w --html --server src",
-    "dev:tmp": "pnpm marp -w --html --server template",
-    "build": "pnpm marp dist --image png && pnpm marp dist",
+    "dev": "marp --theme theme.css -w --html --server src",
+    "dev:tmp": "marp --theme theme.css -w --html --server template",
+    "build": "marp --theme theme.css dist --image png && marp --theme theme.css dist",
     "prebuild": "rm -rf dist && mkdir -p dist && cp -r src/* dist",
-    "start": "pnpm marp -s --html --server dist"
+    "start": "marp --theme theme.css -s --html --server dist"
   },
   "packageManager": "pnpm@8.15.6+sha256.01c01eeb990e379b31ef19c03e9d06a14afa5250b82e81303f88721c99ff2e6f",
   "devDependencies": {

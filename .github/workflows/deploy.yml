@@ -5,6 +5,7 @@ on:
     branches:
       - main
     paths:
+      - "public/**"
       - "src/**"
 
 jobs:
@@ -17,20 +18,30 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: 20
-      - name: Remove docs
+      - name: Copy Images to dist
         run: |
-          rm -rf docs/
-      - name: Copy Images to docs
-        run: |
-          mkdir -p docs
-          find src -type f \( -name "*.png" -o -name "*.jpg" \) | xargs -I {} sh -c 'mkdir -p "$(dirname {} | sed "s|^src|docs|")" && cp "{}" "$(echo {} | sed "s|^src|docs|")"'
+          mkdir -p dist
+          cp -r public dist
+          find src -type f \( -name "*.png" -o -name "*.jpg" \) | xargs -I {} sh -c 'mkdir -p "$(dirname {} | sed "s|^src|dist|")" && cp "{}" "$(echo {} | sed "s|^src|dist|")"'
       - name: Generate OGP Images
-        run: npx @marp-team/marp-cli@latest -I src -o docs --image png
+        run: npx @marp-team/marp-cli@latest -I src -o dist --image png
       - name: Build Marp slides
-        run: npx @marp-team/marp-cli@latest -I src -o docs
-      - name: Deploy to Github Pages
-        uses: peaceiris/actions-gh-pages@v3
+        run: npx @marp-team/marp-cli@latest -I src -o dist
+      - name: Upload artifacts
+        id: deployment
+        uses: actions/upload-pages-artifact@v3
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./docs
-          destination_dir: ./docs
+          name: dist
+  deploy:
+    needs: build
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

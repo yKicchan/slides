@@ -29,7 +29,7 @@ yKicchan
 
 ---
 
-![w:256](./images/icon.png)
+![w:256](/public/icon.png)
 
 ---
 

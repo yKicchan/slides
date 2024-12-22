@@ -5,28 +5,25 @@ on:
     branches:
       - main
     paths:
-      - "public/**"
       - "src/**"
 
 jobs:
   build:
-    runs-on: ubunts-latest
+    runs-on: ubuntu-latest
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+      - name: Install pnpm
+        uses: pnpm/action-setup@v4
       - name: Install Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: 20
-      - name: Copy Images to dist
-        run: |
-          mkdir -p dist
-          cp -r public dist
-          find src -type f \( -name "*.png" -o -name "*.jpg" \) | xargs -I {} sh -c 'mkdir -p "$(dirname {} | sed "s|^src|dist|")" && cp "{}" "$(echo {} | sed "s|^src|dist|")"'
-      - name: Generate OGP Images
-        run: npx @marp-team/marp-cli@latest -I src -o dist --image png
-      - name: Build Marp slides
-        run: npx @marp-team/marp-cli@latest -I src -o dist
+          node-version-file: .node-version
+          cache: "pnpm"
+      - name: Install dependencies
+        run: pnpm install
+      - name: Build slides
+        run: pnpm build
       - name: Upload artifacts
         id: deployment
         uses: actions/upload-pages-artifact@v3

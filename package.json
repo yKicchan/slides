@@ -1,0 +1,19 @@
+{
+  "name": "slides",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "keywords": [],
+  "author": "yKicchan",
+  "scripts": {
+    "dev": "marp -w --html --server src",
+    "dev:tmp": "marp -w --html --server template",
+    "build": "marp dist --image png && marp dist",
+    "prebuild": "rm -rf dist && mkdir -p dist && cp -r src/* dist",
+    "start": "marp -s --html --server dist"
+  },
+  "packageManager": "pnpm@8.15.6+sha256.01c01eeb990e379b31ef19c03e9d06a14afa5250b82e81303f88721c99ff2e6f",
+  "devDependencies": {
+    "@marp-team/marp-cli": "^4.0.3"
+  }
+}

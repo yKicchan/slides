@@ -3,8 +3,6 @@ marp: true
 theme: theme
 class: invert
 paginate: true
-size: 16:9
-author: yKicchan
 image: ./index.png
 title:
 description:

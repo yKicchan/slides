@@ -1,4 +1,10 @@
+[![Deploy](https://github.com/yKicchan/slides/actions/workflows/deploy.yml/badge.svg)](https://github.com/yKicchan/slides/actions/workflows/deploy.yml)
+
 # yKicchan's Slides
+
+The slides are created using [Marp](https://marp.app/).
+
+They are published on GitHub Pages.
 
 ## Install
 
@@ -9,10 +15,14 @@ $ pnpm install
 ## Watch
 
 ```sh
-$ pnpm dev {dir}
+# slides
+$ pnpm dev
+
+# tamplate
+$ pnpm dev:tmp
 ```
 
-## Build & Start
+## Build & Serve
 
 ```sh
 $ pnpm build

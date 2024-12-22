@@ -1,6 +1,6 @@
 ---
 marp: true
-theme: uncover
+theme: theme
 class: invert
 paginate: true
 size: 16:9
@@ -10,24 +10,6 @@ title:
 description:
 keywords:
 ---
-<style>
-a {
-  text-decoration: underline;
-}
-th, td {
-  padding: .5em .75em !important;
-}
-tbody>tr:first-child>td {
-  padding-top: 1em !important;
-}
-td {
-  border-color: transparent !important;
-}
-.col {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-}
-</style>
 <style scoped>
 h2 {
   color: #f55;

@@ -1,0 +1,23 @@
+/* @theme theme */
+@import 'uncover';
+
+a {
+  text-decoration: underline;
+}
+
+th, td {
+  padding: .5em .75em !important;
+}
+
+tbody>tr:first-child>td {
+  padding-top: 1em !important;
+}
+
+td {
+  border-color: transparent !important;
+}
+
+.col {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}

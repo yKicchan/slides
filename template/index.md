@@ -11,17 +11,17 @@ description:
 keywords:
 ---
 <style scoped>
-h2 {
+h1 {
   color: #f55;
 }
 </style>
 
-## Title
+# Title
 
 Date Domain
 yKicchan
 
-<!-- _paginate: skip -->
+<!-- _paginate: false -->
 
 ---
 <style scoped>

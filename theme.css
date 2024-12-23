@@ -55,6 +55,14 @@ ol,
 ul {
   margin-left: 2em;
 }
+section > ul > li,
+section > ol > li {
+  margin-bottom: .2em;
+}
+li {
+  padding-top: .2em;
+  font-size: .75rem
+}
 
 /* code */
 code {

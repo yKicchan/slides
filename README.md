@@ -12,6 +12,12 @@ They are published on GitHub Pages.
 $ pnpm install
 ```
 
+## New
+
+```sh
+$ pnpm new {dirname}
+```
+
 ## Watch
 
 ```sh

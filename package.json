@@ -6,6 +6,7 @@
   "keywords": [],
   "author": "yKicchan",
   "scripts": {
+    "new": "scripts/new.sh",
     "dev": "marp -w --html --server src",
     "dev:tmp": "marp -w --html --server template",
     "build": "marp dist --image png && marp dist",

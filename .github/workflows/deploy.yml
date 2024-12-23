@@ -24,6 +24,8 @@ jobs:
           cache: "pnpm"
       - name: Install dependencies
         run: pnpm install
+      - name: Install font
+        run: sudo apt install fonts-noto
       - name: Build slides
         run: pnpm build
       - name: Generate Directory Listings

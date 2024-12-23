@@ -4,7 +4,7 @@
 
 The slides are created using [Marp](https://marp.app/).
 
-They are published on GitHub Pages.
+They are published on [GitHub Pages](https://ykicchan.github.io/slides/).
 
 ## Install
 

@@ -3,7 +3,7 @@ marp: true
 theme: theme
 class: invert
 paginate: true
-image: ./index.png
+image: https://ykicchan.github.io/slides/preview/index.png
 title: Preview test slide
 description: Preview test of slides created with Marp.
 keywords: Marp

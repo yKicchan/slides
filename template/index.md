@@ -3,7 +3,7 @@ marp: true
 theme: theme
 class: invert
 paginate: true
-image: ./index.png
+image: https://ykicchan.github.io/slides/{{PATH}}/index.png
 title:
 description:
 keywords:

@@ -1,0 +1,59 @@
+/* @theme global */
+
+/* common */
+section *::selection {
+  background: #6e6eff30;
+}
+
+/* link */
+a {
+  text-decoration: underline;
+  transition: opacity 0.3s;
+}
+a:hover {
+  text-decoration: none;
+  opacity: 0.7;
+}
+a:has(code) {
+  text-decoration-color: #2b2b2b;
+}
+section.invert a:has(code) {
+  text-decoration-color: #dedede;
+}
+footer > a {
+  color: var(--color-header);
+}
+footer > a:hover {
+  color: var(--color-header);
+}
+
+/* table */
+th, td {
+  padding: .5em .75em !important;
+}
+tbody>tr:first-child>td {
+  padding-top: 1em !important;
+}
+td {
+  border-color: transparent !important;
+}
+
+/* list */
+ol,
+ul {
+  margin-left: 2em;
+}
+section > ul > li,
+section > ol > li {
+  margin-bottom: .2em;
+}
+li {
+  padding-top: .2em;
+  font-size: .75rem
+}
+
+/* code */
+code {
+  padding: .2em .4em !important;
+  border-radius: 12px !important;
+}

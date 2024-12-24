@@ -1,4 +1,7 @@
 lang: ja-JP
-theme: theme.css
+theme: themes/index.css
+themeSet: ./themes
 size: 16:9
 author: yKicchan
+engine: engine.mjs
+allowLocalFiles: true

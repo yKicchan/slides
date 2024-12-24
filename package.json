@@ -7,14 +7,15 @@
   "author": "yKicchan",
   "scripts": {
     "new": "scripts/new.sh",
-    "dev": "marp -w --html --server src",
-    "dev:tmp": "marp -w --html --server template",
+    "dev": "marp --debug=true -w --html -s src",
+    "dev:tmp": "marp --debug=true -w --html -s template",
     "build": "marp dist --image png && marp dist",
     "prebuild": "rm -rf dist && mkdir -p dist && cp -r src/* dist",
-    "start": "marp -s --html --server dist"
+    "start": "marp --html -s dist"
   },
-  "packageManager": "pnpm@8.15.6+sha256.01c01eeb990e379b31ef19c03e9d06a14afa5250b82e81303f88721c99ff2e6f",
+  "packageManager": "pnpm@9.15.1+sha512.1acb565e6193efbebda772702950469150cf12bcc764262e7587e71d19dc98a423dff9536e57ea44c49bdf790ff694e83c27be5faa23d67e0c033b583be4bfcf",
   "devDependencies": {
-    "@marp-team/marp-cli": "^4.0.3"
+    "@marp-team/marp-cli": "^4.0.3",
+    "markdown-it-container": "^4.0.0"
   }
 }

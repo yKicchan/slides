@@ -1,5 +1,9 @@
 {
   "markdown.marp.themes": [
-    "theme.css"
-  ]
+    "themes/index.css",
+    "themes/global.css",
+    "themes/custom.css",
+    "themes/darcula.css"
+  ],
+  "markdown.marp.enableHtml": true
 }

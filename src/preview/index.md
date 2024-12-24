@@ -114,16 +114,34 @@ function doSomething() {
 
 ---
 
-<!-- _class: -->
-<!-- header: header -->
-<!-- footer: "" -->
+<style scoped>
+h2 {
+  margin: 0;
+}
+</style>
 
-## Marp
+
+## Table & Image
+
+| th | header item |
+| --- | :--- |
+| td | first item |
+| td | second item |
+| td | third item |
+
+![bg w:512 right](./images/icon.png)
 
 ---
 
-<div class="col">
-<div>
+<!-- _class: -->
+<!-- header: header -->
+<!-- footer: footer -->
+
+## Custom
+
+---
+
+:::h
 
 ## Left Contents
 
@@ -133,8 +151,8 @@ doSomething();
 console.timeEnd("label");
 ```
 
-</div>
-<div>
+:::
+:::h
 
 ## Right Contents
 
@@ -142,28 +160,48 @@ console.timeEnd("label");
 2. do something
 3. end timer
 
-</div>
-</div>
+:::
 
 ---
 
 <!-- header: "" -->
 <!-- footer: "" -->
 
+## Secondary text
 
-<style scoped>
-h2 {
-  margin: 0;
-}
-</style>
+:::s
 
+this is note content.
 
-## Table
+:::
 
-| th | header item |
-| --- | :--- |
-| td | first item |
-| td | second item |
-| td | third item |
+---
 
-![bg w:512 right](./images/icon.png)
+## Alert
+
+::::h
+
+:::note
+This is note text
+:::
+
+:::important
+This is important text
+:::
+
+::::
+::::h
+
+:::tip
+This is tip text
+:::
+
+:::warning
+This is warning text
+:::
+
+:::caution
+This is caution text
+:::
+
+::::

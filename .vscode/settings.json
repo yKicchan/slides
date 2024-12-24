@@ -2,7 +2,7 @@
   "markdown.marp.themes": [
     "themes/index.css",
     "themes/global.css",
-    "themes/custom.css"
+    "themes/utility.css"
   ],
   "markdown.marp.enableHtml": true
 }

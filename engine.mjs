@@ -8,10 +8,5 @@ import attrs from 'markdown-it-attrs';
 export default ({ marp }) => marp
   .use(prism)
   .use(attrs)
-  .use(container, 's')
-  .use(container, 'h')
-  .use(container, 'note')
-  .use(container, 'important')
-  .use(container, 'tip')
-  .use(container, 'caution')
-  .use(container, "warning");
+  .use(container, '_')
+  .use(container, 'h');

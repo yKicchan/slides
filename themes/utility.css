@@ -1,9 +1,48 @@
-/* @theme custom */
+/* @theme utility */
 
-/* secondary text */
-.s {
-  font-size: .6em;
+/* margin */
+.m-0 {
+  margin: 0;
+}
+
+/* font-size */
+.text-xl {
+  font-size: 1.25em;
+}
+.text-lg {
+  font-size: 1.125em;
+}
+.text-sm {
+  font-size: .875em;
+}
+.text-xs {
+  font-size: .75em;
+}
+.text-xs2 {
+  font-size: .625em;
+}
+.text-xs3 {
+  font-size: .5em;
+}
+
+/* color */
+.gray {
   color: #7f7f7f;
+}
+.red {
+  color: #f55;
+}
+.blue {
+  color: #38f;
+}
+.light-blue {
+  color: #61DBFB;
+}
+.green {
+  color: #2eab7f;
+}
+.yellow {
+  color: #ab8a2e;
 }
 
 /* columns */
@@ -12,7 +51,7 @@
   width: 45%;
   vertical-align: top;
 }
-.h+.h {
+.h + .h {
   margin-left: 1em;
 }
 

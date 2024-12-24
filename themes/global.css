@@ -54,6 +54,5 @@ li {
 
 /* code block */
 marp-pre > code {
-  padding: .5em 1em !important;
-  font-size: .8em;
+  padding: .5em 1em;
 }

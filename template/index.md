@@ -8,13 +8,8 @@ title:
 description:
 keywords:
 ---
-<style scoped>
-h1 {
-  color: #f55;
-}
-</style>
 
-# Title
+# Title{.red}
 
 Date Domain
 yKicchan
@@ -22,13 +17,8 @@ yKicchan
 <!-- _paginate: false -->
 
 ---
-<style scoped>
-h2 {
-  margin: 0;
-}
-</style>
 
-## 自己紹介
+## 自己紹介{.m-0}
 
 |||
 | --- | :--- |

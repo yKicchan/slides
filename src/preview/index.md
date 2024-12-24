@@ -8,13 +8,8 @@ title: Preview test slide
 description: Preview test of slides created with Marp.
 keywords: Marp
 ---
-<style scoped>
-h1 {
-  color: #f55;
-}
-</style>
 
-# <!-- fit --> Preview Test Slide
+# <!-- fit --> Preview Test Slide{.red}
 
 yKicchan
 
@@ -114,13 +109,6 @@ function doSomething() {
 
 ---
 
-<style scoped>
-h2 {
-  margin: 0;
-}
-</style>
-
-
 ## Table & Image
 
 | th | header item |
@@ -169,9 +157,9 @@ console.timeEnd("label");
 
 ## Secondary text
 
-this is note content.{.s}
+this is note content.{.gray .text-sm}
 
-:::s
+:::_ {.gray .text-sm}
 
 this is note content.
 this is note content.
@@ -185,12 +173,12 @@ this is note content.
 
 ::::h
 
-:::note
+:::_ {.note}
 This is note text
 This is note text
 :::
 
-:::important
+:::_ {.important}
 This is important text
 This is important text
 :::

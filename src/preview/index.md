@@ -145,7 +145,7 @@ h2 {
 
 ## Left Contents
 
-```ts
+```js{data-file="test.js"}
 console.time("label");
 doSomething();
 console.timeEnd("label");
@@ -169,8 +169,12 @@ console.timeEnd("label");
 
 ## Secondary text
 
+this is note content.{.s}
+
 :::s
 
+this is note content.
+this is note content.
 this is note content.
 
 :::
@@ -183,25 +187,21 @@ this is note content.
 
 :::note
 This is note text
+This is note text
 :::
 
 :::important
+This is important text
 This is important text
 :::
 
 ::::
 ::::h
 
-:::tip
-This is tip text
-:::
+This is tip text{.tip}
 
-:::warning
-This is warning text
-:::
+This is warning text{.warning}
 
-:::caution
-This is caution text
-:::
+This is caution text{.caution}
 
 ::::

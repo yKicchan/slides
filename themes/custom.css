@@ -16,6 +16,24 @@
   margin-left: 1em;
 }
 
+/* codeblock filename */
+code[data-file] {
+  position: relative;
+  margin-top: 2em;
+  border-top-left-radius: 0;
+}
+code[data-file]::before {
+  position: absolute;
+  top: -2.5em;
+  left: 0;
+  padding: .5em 1em;
+  border-top-left-radius: .3em;
+  border-top-right-radius: .3em;
+  content: attr(data-file);
+  font-size: .75em;
+  background-color: #3d3d3d;
+}
+
 /* alert */
 .note,
 .tip,

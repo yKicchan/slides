@@ -3,9 +3,9 @@
 /* default */
 @import 'uncover';
 
+/* syntax higlight */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/prism-themes/1.9.0/prism-darcula.min.css');
+
 /* custom theme */
 @import 'global';
 @import 'custom';
-
-/* syntax higlight */
-@import 'darcula';

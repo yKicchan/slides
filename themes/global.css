@@ -52,8 +52,8 @@ li {
   font-size: .75rem
 }
 
-/* code */
-code {
-  padding: .2em .4em !important;
-  border-radius: 12px !important;
+/* code block */
+marp-pre > code {
+  padding: .5em 1em !important;
+  font-size: .8em;
 }

@@ -37,20 +37,28 @@ interface Me extends Person {
 
 ## Amplify ってなんぞ 🤔
 
+:::_ {.text-sm}
+
 - コマンド叩くだけで AWS の各種サービス作成をやってくれる
 - ライブラリ入れるだけで簡単に各種 AWS とフロントを接続
 - AWS あんま触れないけどフロントは分かるって人は使える
 - 逆にネイティヴや Web わからんけど AWS 分かる人は微妙
 
+:::
+
 ---
 
 ## Amplify でできること一例
+
+:::_ {.text-sm}
 
 - Cognito を利用した認証システム // ← 今日はこれやる
 - S3 + CloudFront を利用した静的サイトホスティング
 - API Gateway + Lambda で API 作成
   - REST, GraphQL 両対応
 - GitHub や CodeCommit と連携し CI/CD
+
+:::
 
 ---
 
@@ -87,8 +95,12 @@ $ amplify confidure
 
 ![w:1024](./images/add-user-success.png)
 
+:::_ {.text-sm}
+
 - アクセスキーIDとシークレットアクセスキーを CLI に入力
 - 機密情報なので慎重に扱おう
+
+:::
 
 ---
 
@@ -122,12 +134,16 @@ $ amplify init
 $ yarn add aws-amplify @aws-amplify/ui-react
 ```
 
+:::_ {.text-sm}
+
 - `aws-amplify`
   - AWS との通信などが簡単にできるライブラリ
 - `@aws-amplify/ui-react`
   - ログイン画面などの UI 部品群
 - 公式には `npm` が使われているけど `yarn` で追加している
   - `create-react-app` のデフォは `yarn` なので
+
+:::
 
 ---
 
@@ -160,9 +176,13 @@ $ amplify add auth
 $ amplify push
 ```
 
+:::_ {.text-sm}
+
 - 質問出てくるので答えると Cognito のセットアップが完了する
 - `push` すると AWS に反映され Cognito が出来上がる
 - 一部項目以外は `amplify update auth` で後から更新可能
+
+:::
 
 ---
 

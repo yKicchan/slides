@@ -8,13 +8,8 @@ title: Atomic Design とは？
 description: Atomic Design について簡単に解説する資料
 keywords: AtomicDesign
 ---
-<style scoped>
-h1 {
-  color: #f55;
-}
-</style>
 
-# Atomic Design とは？
+# Atomic Design とは？{.red}
 
 2019.9.2 @yKicchan
 
@@ -78,25 +73,22 @@ AtomsやOrganismsから構成される部品。
 ![w:1024](./images/organisms.png)
 
 ---
-<style scoped>
-  p {
-    font-size: .75em;
-  }
-</style>
 
 ## Templates（テンプレート）
 
 Webページのレイアウトを定義するもの。
 テンプレートエンジンなどを利用して実現しているイメージに近い。
 
-例えば大まかにAページには
+例えば大まかにAページには右のようなものがあるというような定義であるが、中身のないダミー情報のようなもの。{.h}
+
+:::h
 
 - Header
 - Sidebar
 - Footer
 - Contents
 
-があるというような定義であるが、中身のないダミー情報のようなもの。
+:::
 
 ---
 
@@ -128,7 +120,7 @@ Templatesに部品を組み込んで、最終的なアウトプットとなるPa
 
 ## ディレクトリ構成
 
-```text
+```text {.text-sm}
 .
 ├── assets
 ├── atoms           // ←
@@ -148,6 +140,8 @@ Templatesに部品を組み込んで、最終的なアウトプットとなるPa
 
 ## ポイント
 
+:::_ {.text-sm}
+
 - Atoms
   - HTMLをラップするものではない
   - 命名・IF定義には最大の注意を払う
@@ -155,3 +149,5 @@ Templatesに部品を組み込んで、最終的なアウトプットとなるPa
 - Molecules
   - 命名・IF定義には最大の注意を払う
   - 標準に従う(Reactだと`children`, vueだと`v-model`や`slot`)
+
+:::

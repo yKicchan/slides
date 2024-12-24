@@ -8,14 +8,9 @@ title: まだドキュメント管理で摩耗してるの？
 description: ドキュメントの管理に便利なツールを紹介する資料
 keywords: ドキュメント, PlantUML, OpenAPI, API Blueprint, Marp, REVEAL.JS
 ---
-<style scoped>
-h1 {
-  color: #f55;
-}
-</style>
 
 ## まだ
-# ドキュメント管理
+# ドキュメント管理{.red}
 ## で摩耗してるの？
 
 2019.6.8 @yKicchan

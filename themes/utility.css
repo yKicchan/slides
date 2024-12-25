@@ -70,7 +70,7 @@ code[data-file]::before {
   border-top-right-radius: .3em;
   content: attr(data-file);
   font-size: .75em;
-  background-color: #3d3d3d;
+  background-color: #2b2b2b;
 }
 
 /* alert */
@@ -79,15 +79,14 @@ code[data-file]::before {
 .important,
 .warning,
 .caution {
-  --padding-x: 1em;
-  --padding-y: .5em;
+  --padding-x: 1.25em;
+  --padding-y: .75em;
 
   position: relative;
   margin-bottom: 1em;
   padding: var(--padding-y) var(--padding-x);
   border-radius: 12px;
   text-align: left;
-  font-size: .75em;
 }
 .note > p,
 .tip > p,
@@ -127,7 +126,7 @@ code[data-file]::before {
 .warning::after,
 .caution::after {
   position: absolute;
-  top: calc(var(--padding-y) * 1.4);
+  top: calc(var(--padding-y) * 1.3);
   left: calc(var(--padding-x) - .2em);
   content: '';
   width: 1em;

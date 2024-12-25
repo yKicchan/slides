@@ -52,6 +52,9 @@ li {
 }
 
 /* code block */
+code {
+  border-radius: .3em;
+}
 marp-pre > code {
   padding: .5em 1em;
 }

@@ -11,7 +11,7 @@ keywords: Marp
 
 # <!-- fit --> Preview Test Slide{.red}
 
-yKicchan
+@yKicchan
 
 <!-- _paginate: false -->
 
@@ -171,7 +171,7 @@ this is note content.
 
 ## Alert
 
-::::h
+::::h {.text-sm}
 
 :::_ {.note}
 This is note text
@@ -184,7 +184,7 @@ This is important text
 :::
 
 ::::
-::::h
+::::h {.text-sm}
 
 This is tip text{.tip}
 

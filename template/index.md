@@ -12,7 +12,7 @@ keywords:
 # Title{.red}
 
 Date Domain
-yKicchan
+@yKicchan
 
 <!-- _paginate: false -->
 

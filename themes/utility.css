@@ -1,5 +1,20 @@
 /* @theme utility */
 
+/* columns */
+.c {
+  display: flex;
+  gap: 1em;
+}
+.c > * {
+  flex: 1;
+}
+
+/* half block */
+.h {
+  display: inline-block;
+  width: 50%;
+}
+
 /* margin */
 .m-0 {
   margin: 0;
@@ -66,38 +81,23 @@
   color: #2eab7f;
 }
 .yellow {
-  color: #ab8a2e;
-}
-
-/* columns */
-.c {
-  display: flex;
-  gap: 1em;
-}
-.c > * {
-  flex: 1;
-}
-
-/* half block */
-.h {
-  display: inline-block;
-  width: 50%;
+  color: #e2b741;
 }
 
 /* codeblock filename */
-code[data-file] {
+code[name] {
   position: relative;
   margin-top: 2em;
   border-top-left-radius: 0;
 }
-code[data-file]::before {
+code[name]::before {
   position: absolute;
   top: -2.5em;
   left: 0;
   padding: .5em 1em;
   border-top-left-radius: .3em;
   border-top-right-radius: .3em;
-  content: attr(data-file);
+  content: attr(name);
   font-size: .75em;
   background-color: #2b2b2b;
 }

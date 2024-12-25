@@ -6,31 +6,17 @@ The slides are created using [Marp](https://marp.app/).
 
 They are published on [GitHub Pages](https://ykicchan.github.io/slides/).
 
-## Install
+> [!caution]
+> This repository extends the Marp engine, so the [`marp-vscode`](https://github.com/marp-team/marp-vscode) extension cannot be used.  
+> For more details, see [this comment](https://github.com/marp-team/marp-vscode/issues/85#issuecomment-543798586).
 
-```sh
-$ pnpm install
-```
+## Scripts
 
-## New
-
-```sh
-$ pnpm new {dirname}
-```
-
-## Watch
-
-```sh
-# slides
-$ pnpm dev
-
-# tamplate
-$ pnpm dev:tmp
-```
-
-## Build & Serve
-
-```sh
-$ pnpm build
-$ pnpm start
-```
+| Action | Command |
+| --- | --- |
+| Install dependencies | `pnpm install` |
+| Create a new slide | `pnpm new {dirname}` |
+| Start dev server | `pnpm dev` |
+| Start dev server (for template) | `pnpm dev:tmp` |
+| Build the slides | `pnpm build` |
+| Serve built slides | `pnpm start` |

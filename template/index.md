@@ -1,6 +1,6 @@
 ---
 marp: true
-theme: theme
+theme: ykicchan
 class: invert
 paginate: true
 image: https://ykicchan.github.io/slides/{{PATH}}/index.png

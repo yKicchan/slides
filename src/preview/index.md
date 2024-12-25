@@ -129,7 +129,8 @@ function doSomething() {
 
 ---
 
-:::h
+::::c
+:::_
 
 ## Left Contents
 
@@ -140,7 +141,7 @@ console.timeEnd("label");
 ```
 
 :::
-:::h
+:::_
 
 ## Right Contents
 
@@ -149,6 +150,7 @@ console.timeEnd("label");
 3. end timer
 
 :::
+::::
 
 ---
 
@@ -171,8 +173,9 @@ this is note content.
 
 ## Alert
 
-::::h {.text-sm}
+:::::c {.text-sm}
 
+::::_
 :::_ {.note}
 This is note text
 This is note text
@@ -182,14 +185,14 @@ This is note text
 This is important text
 This is important text
 :::
-
 ::::
-::::h {.text-sm}
 
+:::_
 This is tip text{.tip}
 
 This is warning text{.warning}
 
 This is caution text{.caution}
+:::
 
-::::
+:::::

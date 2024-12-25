@@ -46,13 +46,18 @@
 }
 
 /* columns */
+.c {
+  display: flex;
+  gap: 1em;
+}
+.c > * {
+  flex: 1;
+}
+
+/* half block */
 .h {
   display: inline-block;
-  width: 45%;
-  vertical-align: top;
-}
-.h + .h {
-  margin-left: 1em;
+  width: 50%;
 }
 
 /* codeblock filename */

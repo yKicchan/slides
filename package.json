@@ -19,6 +19,7 @@
     "@marp-team/marp-core": "^4.0.1",
     "markdown-it-attrs": "^4.3.1",
     "markdown-it-container": "^4.0.0",
-    "markdown-it-prism": "^2.3.0"
+    "markdown-it-prism": "^2.3.0",
+    "markdown-it-textual-uml": "^0.17.1"
   }
 }

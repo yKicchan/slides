@@ -9,6 +9,9 @@ on:
       - "src/**"
       - ".github/workflows/deploy.yml"
 
+env:
+  TZ: 'Asia/Tokyo'
+
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -28,10 +31,10 @@ jobs:
         run: sudo apt install fonts-noto
       - name: Build slides
         run: pnpm build
-      - name: Generate Directory Listings
-        uses: jayanta525/github-pages-directory-listing@v4.0.0
+      - name: Generate Directory Listing Action
+        uses: yKicchan/generate-directory-listing-action@v1
         with:
-          FOLDER: dist
+          target: dist
       - name: Upload artifacts
         uses: actions/upload-pages-artifact@v3
         with:

@@ -4,6 +4,12 @@
 section *::selection {
   background: #6e6eff30;
 }
+section > header {
+  text-align: left;
+}
+section[id="1"] > footer {
+  text-align: left;
+}
 
 /* link */
 a {
@@ -20,9 +26,9 @@ a:has(code) {
 section.invert a:has(code) {
   text-decoration-color: #dedede;
 }
-footer > a {
-  color: var(--color-header);
-}
+header > a,
+header > a:hover,
+footer > a,
 footer > a:hover {
   color: var(--color-header);
 }
@@ -57,4 +63,8 @@ code {
 }
 marp-pre > code {
   padding: .5em 1em;
+}
+
+mark {
+  color: inherit;
 }

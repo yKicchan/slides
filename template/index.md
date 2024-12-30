@@ -11,20 +11,24 @@ keywords:
 
 # Title{.red}
 
-Date Domain
-@yKicchan
+:::c
+{._}
 
+@yKicchan
+:::
+
+<!-- _footer: "[Domain]() / Date" -->
 <!-- _paginate: false -->
 
 ---
 
 ## 自己紹介{.m-0}
 
-|||
-| --- | :--- |
-| 名 | きっちゃそ |
-| 社 | DeNA |
-| 職 | Web Frontend |
+|   |                                     |
+|---|:------------------------------------|
+| 名 | きっちゃそ                               |
+| 社 | :DeNA                               |
+| 職 | Web Frontend                        |
 | X | [@yKicchan](https://x.com/yKicchan) |
 
 ![bg w:512 right](./images/icon.png)

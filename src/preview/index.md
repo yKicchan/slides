@@ -9,10 +9,15 @@ description: Preview test of slides created with Marp.
 keywords: Marp
 ---
 
-# <!-- fit --> Preview Test Slide{.red}
+# Preview Test Slide{.red}
+
+:::c
+{._}
 
 @yKicchan
+:::
 
+<!-- _footer: "[Repository](https://github.com/yKicchan/slides)" -->
 <!-- _paginate: false -->
 
 ---
@@ -187,6 +192,7 @@ function doSomething() {
 ::::c
 :::_
 
+### .white{.white}
 ### .gray{.gray}
 ### .red{.red}
 ### .blue{.blue}

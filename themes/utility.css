@@ -65,6 +65,9 @@
 }
 
 /* color */
+.white {
+  color: #fff;
+}
 .gray {
   color: #7f7f7f;
 }

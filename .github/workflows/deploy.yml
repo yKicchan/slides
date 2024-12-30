@@ -30,6 +30,7 @@ jobs:
         uses: yKicchan/generate-directory-listing-action@v1
         with:
           target: dist
+          ignore: draft
       - name: Upload artifacts
         uses: actions/upload-pages-artifact@v3
         with:

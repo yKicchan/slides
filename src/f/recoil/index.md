@@ -11,7 +11,14 @@ keywords: Recoil, jotai
 
 # Recoil の移行先を真剣に検討して加速する{.light-blue}
 
+:::c
+{._}
+
 @shiroma
+:::
+
+<!-- _footer: "2023.11.2" -->
+<!-- _paginate: false -->
 
 ---
 

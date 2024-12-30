@@ -13,7 +13,14 @@ keywords: ドキュメント, PlantUML, OpenAPI, API Blueprint, Marp, REVEAL.JS
 # ドキュメント管理{.red}
 ## で摩耗してるの？
 
-2019.6.8 @yKicchan
+:::c
+{._}
+
+@yKicchan
+:::
+
+<!-- _footer: "2019.6.8" -->
+<!-- _paginate: false -->
 
 ---
 <style scoped>

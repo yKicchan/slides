@@ -9,9 +9,16 @@ description:
 keywords:
 ---
 
-# [Amplify FW](https://docs.amplify.aws/) で爆速フロント開発
+# [Amplify FW](https://docs.amplify.aws/) で<br>爆速フロント開発
 
-2020.6.23 @yKicchan
+:::c
+{._}
+
+@yKicchan
+:::
+
+<!-- _footer: "2020.6.23" -->
+<!-- _paginate: false -->
 
 ---
 <style scoped>

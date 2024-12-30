@@ -11,7 +11,14 @@ keywords: AtomicDesign
 
 # Atomic Design とは？{.red}
 
-2019.9.2 @yKicchan
+:::c
+{._}
+
+@yKicchan
+:::
+
+<!-- _footer: "2019.9.2" -->
+<!-- _paginate: false -->
 
 ---
 

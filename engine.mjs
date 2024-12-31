@@ -16,4 +16,3 @@ export default ({ marp }) => marp
   .use(attrs)
   .use(container, '_')
   .use(container, 'c')
-  .use(container, 'h');

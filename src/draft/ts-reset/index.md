@@ -61,11 +61,11 @@ TypeScript で開発していて
 ```ts{.text-lg}
 const array = [1, 2, null, 4, undefined, 6, 7];
 
-const filterdArray = array.filter(Boolean);
-// filterdArray: (number | null | undefined)[]🖕
+const filteredArray = array.filter(Boolean);
+// filteredArray: (number | null | undefined)[]🖕
 ```
 
-TypeScript v5.5 以降では[解消済み](https://github.com/microsoft/TypeScript/pull/57465) {.note .h .text-xs2}
+TypeScript v5.5 以降では[解消済み](https://github.com/microsoft/TypeScript/pull/57465) {.note .fit .text-xs}
 
 ---
 
@@ -177,8 +177,8 @@ import "@total-typescript/ts-reset";
 ```ts{.text-lg}
 const array = [1, 2, null, 4, undefined, 6, 7];
 
-const filterdArray = array.filter(Boolean);
-// filterdArray: number[]✨
+const filteredArray = array.filter(Boolean);
+// filteredArray: number[]✨
 ```
 
 ---
@@ -246,8 +246,8 @@ import '@total-typescript/ts-reset/array-includes';
 import '@total-typescript/ts-reset/filter-boolean';
 ```
 
-:::h {.tip .text-sm}
-👉 [ルールの一覧は公式サイトへ](https://www.totaltypescript.com/ts-reset){.text-sm}
+:::_ {.tip .fit .text-sm}
+==👉 [ルールの一覧は公式サイトへ](https://www.totaltypescript.com/ts-reset)=={.text-sm}
 :::
 
 ---

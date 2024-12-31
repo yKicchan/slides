@@ -9,10 +9,13 @@
   flex: 1;
 }
 
-/* half block */
-.h {
+/* fitting block */
+.fit {
   display: inline-block;
-  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  width: max-content;
+  max-width: 100%;
 }
 
 /* margin */
@@ -65,29 +68,44 @@
 }
 
 /* color */
-.white {
+.white,
+.white:hover {
   color: #fff;
 }
-.gray {
+.black,
+.black:hover {
+  color: #202228;
+}
+.gray,
+.gray:hover {
   color: #7f7f7f;
 }
-.red {
+.red,
+.red:hover {
   color: #f55;
 }
-.blue {
+.blue,
+.blue:hover {
   color: #38f;
 }
-.light-blue {
+.light-blue,
+.light-blue:hover {
   color: #61DBFB;
 }
-.green {
+.green,
+.green:hover {
   color: #2eab7f;
 }
-.yellow {
+.yellow,
+.yellow:hover {
   color: #e2b741;
 }
+.purple,
+.purple:hover {
+  color: #673ab8;
+}
 
-/* codeblock filename */
+/* code block filename */
 code[name] {
   position: relative;
   margin-top: 2em;

@@ -99,7 +99,7 @@ https://example.com
 ```ts
 const example = "string";
 type Props = { key: string; value: number; };
-const prop: Props = { key: "k", value: 123 };
+const props: Props = { key: "k", value: 123 };
 
 function doSomething() {
   console.log(example);
@@ -149,9 +149,13 @@ function doSomething() {
 
 ---
 
-## `.h`
+## `.fit`
 
-### `Half Size`{.h}
+> ### No fitting
+
+:::_ {.fit .mt-1}
+> ### Fitted
+:::
 
 ---
 
@@ -192,17 +196,43 @@ function doSomething() {
 ::::c
 :::_
 
-### .white{.white}
-### .gray{.gray}
-### .red{.red}
-### .blue{.blue}
+### `.white`{.white}
+### `.gray`{.gray}
+### `.red`{.red}
+### `.purple`{.purple}
 
 :::
 :::_
 
-### .light-blue{.light-blue}
-### .green{.green}
-### .yellow{.yellow}
+### `.blue`{.blue}
+### `.light-blue`{.light-blue}
+### `.green`{.green}
+### `.yellow`{.yellow}
+
+:::
+::::
+
+---
+
+<!-- _class: -->
+
+## Colors
+
+::::c
+:::_
+
+### `.black`{.black}
+### `.gray`{.gray}
+### `.red`{.red}
+### `.purple`{.purple}
+
+:::
+:::_
+
+### `.blue`{.blue}
+### `.light-blue`{.light-blue}
+### `.green`{.green}
+### `.yellow`{.yellow}
 
 :::
 ::::
@@ -211,7 +241,7 @@ function doSomething() {
 
 ### CodeBlock `name=filename`
 
-```tsx{name=component.tsx}
+```tsx {name=component.tsx}
 interface P {
   value: string;
   onSubmit: (v: string) => void;
@@ -268,11 +298,10 @@ by `.caution` {.caution}
 ::::c
 
 - `:::c`: columns
-- `:::h`: half
 - `:::_`: dummy
 {.mt-1 .text-xs}
 
-```md{name=input}
+```md {name=input}
 :::c
 
 content
@@ -282,7 +311,7 @@ content
 :::
 ```
 
-```html{name=output}
+```html {name=output}
 <div class="c">
   <p>content</p>
   <p>content</p>
@@ -301,13 +330,13 @@ content
 - `{any-attr=value}`
 {.mt-1 .text-xs}
 
-```md{name=input}
+```md {name=input}
 - content{.one}
 - content{attr=two}
 {.zero}
 ```
 
-```html{name=output}
+```html {name=output}
 <ul class="zero">
   <li class="one">content</li>
   <li attr="two"">content</li>
@@ -322,11 +351,11 @@ content
 
 :::c
 
-```md{name=input}
+```md {name=input}
 ==mark==
 ```
 
-```html{name=output}
+```html {name=output}
 <mark>mark</mark>
 ```
 
@@ -338,11 +367,11 @@ content
 
 :::c
 
-```md{name=input}
+```md {name=input}
 ++ins++
 ```
 
-```html{name=output}
+```html {name=output}
 <ins>ins</ins>
 ```
 
@@ -354,7 +383,7 @@ content
 
 :::c
 
-```txt{.text-xs}
+```txt {.text-xs}
 @startuml
 participant Participant as Foo
 actor       Actor       as Foo1

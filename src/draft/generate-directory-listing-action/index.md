@@ -76,7 +76,7 @@ keywords: GitHubAction, TypeScript, Preact, esbuild, SSG
 ### 使い方
 
 ```yml
-- name: Generate Directory listing
+- name: Generate directory listing
   uses: yKicchan/generate-directory-listing-action@v1
   with:
     target: dist
@@ -88,9 +88,8 @@ keywords: GitHubAction, TypeScript, Preact, esbuild, SSG
 
 ### 利用シーン
 
-- デプロイしたファイルの一覧を手軽に閲覧したい
-- Storybook や CoverageReport など一緒にデプロイしたい
 - ルートページのインデックスを自動で更新したい
+- デプロイしたファイルの一覧を手軽に閲覧したい
 {.text-sm}
 
 目的のページまでの繋ぎとして利用するのに便利{.tip .fit .mt-1 .text-xs}

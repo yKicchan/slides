@@ -7,6 +7,7 @@ on:
       - main
     paths:
       - "src/**"
+      - "themes/**"
       - ".github/workflows/deploy.yml"
 
 env:

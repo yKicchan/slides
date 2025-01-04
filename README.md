@@ -2,21 +2,9 @@
 
 # yKicchan's Slides
 
-The slides are created using [Marp](https://marp.app/).
+Welcome to my personal slide deck!👋  
+Created with the powerful [Marp](https://marp.app/) engine and published on [GitHubPages](https://ykicchan.github.io/slides/).
 
-They are published on [GitHub Pages](https://ykicchan.github.io/slides/).
+---
 
-> [!caution]
-> This repository extends the Marp engine, so the [`marp-vscode`](https://github.com/marp-team/marp-vscode) extension cannot be used.  
-> For more details, see [this comment](https://github.com/marp-team/marp-vscode/issues/85#issuecomment-543798586).
-
-## Scripts
-
-| Action | Command |
-| --- | --- |
-| Install dependencies | `pnpm install` |
-| Create a new slide | `pnpm new {dirname}` |
-| Start dev server | `pnpm dev` |
-| Start dev server (for template) | `pnpm dev:tmp` |
-| Build the slides | `pnpm build` |
-| Serve built slides | `pnpm start` |
+If you ever want to replicate this repository, try using [this template](https://github.com/yKicchan/awesome-marp-template)!

@@ -3,7 +3,7 @@ marp: true
 theme: ykicchan
 class: invert
 paginate: true
-image: https://ykicchan.github.io/slides/draft/generate-directory-index-action/index.png
+image: https://ykicchan.github.io/slides/draft/generate-directory-listing-action/index.png
 title: TypeScript + Preact で GenerateDirectoryListingAction という GitHubActions を作った話
 description: GenerateDirectoryListingAction の開発知見について紹介する発表資料
 keywords: GitHubAction, TypeScript, Preact, esbuild, SSG 

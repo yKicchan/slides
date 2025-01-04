@@ -70,6 +70,7 @@ done
 # CI ではそのままエラー終了
 if [[ -n "$CI" ]]; then
   echo -e "${RED}Mismatch found. Please fix the OGP image URLs.${OFF}"
+  echo -e "You can run the ${CYAN} pnpm check ${OFF} command locally to fix the mismatched URLs."
   exit 1
 fi
 
@@ -84,7 +85,7 @@ fi
 for mismatch in "${mismatches[@]}"; do
   read -r -a mismatch <<< "$mismatch"
   sed -i "" "s|${mismatch[actual_idx]}|${mismatch[expected_idx]}|" "${mismatch[path_idx]}"
-  echo -e "Fixed the mismatched opg image URL in ${CYAN}${mismatch[path_idx]}${OFF}."
+  echo -e "- Fixed in: ${CYAN}${mismatch[path_idx]}${OFF}."
 done
 echo -e "${GREEN}All ogp image URLs have been fixed.$OFF"
 exit 0

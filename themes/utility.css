@@ -4,10 +4,9 @@
 .c {
   display: flex;
   gap: 1em;
-
-  > * {
-    flex: 1;
-  }
+}
+.c > * {
+  flex: 1;
 }
 
 /* fitting block */
@@ -122,6 +121,17 @@ code[name] {
     content: attr(name);
     font-size: .75em;
     background-color: #2b2b2b;
+  }
+}
+/* Safari 用 */
+::-webkit-full-page-media, :future, :root marp-pre:has(code[name]) {
+  position: relative;
+}
+::-webkit-full-page-media, :future, :root code[name] {
+  position: inherit;
+
+  &::before {
+    top: 0;
   }
 }
 

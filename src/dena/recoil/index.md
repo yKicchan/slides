@@ -3,7 +3,7 @@ marp: true
 theme: ykicchan
 class: invert
 paginate: true
-image: https://ykicchan.github.io/slides/f/recoil/index.png
+image: https://ykicchan.github.io/slides/dena/recoil/index.png
 title: Recoil の移行先を真剣に検討して加速する
 description: Recoil の移行先を真剣に検討して加速するスライド
 keywords: Recoil, jotai

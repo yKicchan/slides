@@ -3,7 +3,7 @@ marp: true
 theme: ykicchan
 class: invert
 paginate: true
-image: https://ykicchan.github.io/slides/draft/ts-reset/index.png
+image: https://ykicchan.github.io/slides/kansai-ts/ts-reset/index.png
 title: ts-reset 入れてね
 description: ts-reset を紹介・オススメする発表資料
 keywords: TypeScript, ts-reset
@@ -17,7 +17,7 @@ keywords: TypeScript, ts-reset
 @yKicchan
 ::::
 
-<!-- _footer: "Draft" -->
+<!-- _footer: "[kansai.ts #9](https://kansaits.connpass.com/event/338795/) / 2025.1.24" -->
 <!-- _paginate: false -->
 
 ---
@@ -255,7 +255,7 @@ import '@total-typescript/ts-reset/filter-boolean';
 <!-- header: '' -->
 <!-- _class: -->
 
-## 余談
+## 🤔 余談 🤔
 
 ---
 
@@ -266,6 +266,20 @@ import '@total-typescript/ts-reset/filter-boolean';
 
 ---
 
-<!-- _header: '' -->
+<!-- _class: -->
 
-## ts-reset 入れてね。{.blue}
+## 🙇 宣伝 🙇
+
+---
+
+![bg 100%](images/dena-techcon.svg)
+<!-- _paginate: false -->
+
+---
+
+![bg 100%](images/dena-techcon-after-events.svg)
+<!-- _paginate: false -->
+
+---
+
+## ts-reset 入れてね{.blue}

@@ -29,7 +29,7 @@ keywords: Next.js, GitHubActions, CI, build cache
 |   |                                     |
 |---|:------------------------------------|
 | 名 | きっちゃそ                               |
-| 社 | :DeNA / Pococha                     |
+| 社 | :DeNA                               |
 | 職 | Web Frontend                        |
 | X | [@yKicchan](https://x.com/yKicchan) |
 

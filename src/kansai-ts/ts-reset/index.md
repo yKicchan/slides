@@ -56,35 +56,58 @@ TypeScript で開発していて
 
 <!-- header: こんな経験ありませんか？ -->
 
-### `.filter(Boolean)`で推論が効かない🤦
 
-```ts{.text-lg}
+```ts
 const array = [1, 2, null, 4, undefined, 6, 7];
+// array: (number | null | undefined)[]
 
+const filteredArray = array.filter(Boolean);
+// filteredArray: number[]...?
+```
+
+---
+
+### `.filter(Boolean)`で推論が効かない🤦{.text-sm}
+
+```ts
+const array = [1, 2, null, 4, undefined, 6, 7];
 const filteredArray = array.filter(Boolean);
 // filteredArray: (number | null | undefined)[]🖕
 ```
 
-TypeScript v5.5 以降では[解消済み](https://github.com/microsoft/TypeScript/pull/57465) {.note .fit .text-xs}
+:::_ {.tip .fit .text-xs3}
+TypeScript v5.4 以前では型術語(`is`)が必要
+TypeScript v5.5 以降では下記の形で推論が効くように[解消された](https://github.com/microsoft/TypeScript/pull/57465)
+`array.filter(v => v != null)`
+:::
 
 ---
 
-### `.includes()` が厳しすぎる😡
+```ts
+const array = [1, 2, 3] as const;
 
-```ts{.text-lg}
+array.includes(4);
+// false...?
+```
+
+---
+
+### `.includes()` が厳しすぎる😡{.text-sm}
+
+```ts
 const array = [1, 2, 3] as const;
 
 array.includes(4);
 //            ^^^
 // Argument of type 'number' is not assignable to
-// parameter of type '1 | 2 | 3'.
+//  parameter of type '1 | 2 | 3'.
 ```
 
 ---
 
-### `.includes()` が厳しすぎる😡
+### `.includes()` が厳しすぎる😡{.text-sm}
 
-```ts{.text-sm}
+```ts {.text-sm}
 export const MyType = {
   Hoge: 1,
   Fuga: 2,
@@ -101,7 +124,7 @@ export function isMyType(v: number): v is MyType {
 
 ---
 
-### json が `any` になる🚨
+### json が `any` になる🚨{.text-sm}
 
 ```ts
 const obj = JSON.perse('{}');
@@ -113,6 +136,10 @@ fetch('/')
     console.log(json); // json: any 🖕
   });
 ```
+
+---
+
+### 直感的ではない/安全ではない挙動が<br>開発体験を下げる😢
 
 ---
 
@@ -155,7 +182,7 @@ $ npm i -D @total-typescript/ts-reset
 
 ### 2. Import{.m-0}
 
-```ts{name=reset.d.ts}
+```ts {name=reset.d.ts}
 import "@total-typescript/ts-reset";
 ```
 
@@ -171,10 +198,6 @@ import "@total-typescript/ts-reset";
 ### `.filter(Boolean)`で推論が効いた！✅
 
 ```ts
-import "@total-typescript/ts-reset";
-```
-
-```ts{.text-lg}
 const array = [1, 2, null, 4, undefined, 6, 7];
 
 const filteredArray = array.filter(Boolean);
@@ -187,10 +210,6 @@ const filteredArray = array.filter(Boolean);
 ### `.includes()` が優しくなった！✅
 
 ```ts
-import "@total-typescript/ts-reset";
-```
-
-```ts{.text-xl}
 const array = [1, 2, 3] as const;
 
 array.includes(4);
@@ -201,11 +220,7 @@ array.includes(4);
 
 ### `.includes()` が優しくなった！✅
 
-```ts
-import "@total-typescript/ts-reset";
-```
-
-```ts{.text-sm}
+```ts {.text-xs}
 export const MyType = {
   Hoge: 1,
   Fuga: 2,
@@ -223,10 +238,6 @@ export function isMyType(v: number): v is MyType {
 ### json が `unknown` になった！✅
 
 ```ts
-import "@total-typescript/ts-reset";
-```
-
-```ts
 const obj = JSON.perse('{}');
 // obj: unknown ✨
 
@@ -241,7 +252,7 @@ fetch('/')
 
 ### 個別のルール適応も可能
 
-```ts{name=reset.d.ts .text-lg}
+```ts {name=reset.d.ts}
 import '@total-typescript/ts-reset/array-includes';
 import '@total-typescript/ts-reset/filter-boolean';
 ```

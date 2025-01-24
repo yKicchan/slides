@@ -283,12 +283,16 @@ import '@total-typescript/ts-reset/filter-boolean';
 
 ---
 
-![bg 100%](images/dena-techcon.svg)
+[![DeNA × AI Day ‖ DeNA TechCon 2025 h:560](images/dena-techcon.svg)](https://x.com/DeNAxTech)
+
+<!-- _footer: "[@DeNAxTech](https://x.com/DeNAxTech), [DeNA × AI Day ‖ DeNA TechCon 2025](https://techcon2025.dena.dev/)" -->
 <!-- _paginate: false -->
 
 ---
 
-![bg 100%](images/dena-techcon-after-events.svg)
+[![DeNA TechCon AfterEvents h:560](images/dena-techcon-after-events.svg)](https://dena.connpass.com/)
+
+<!-- _footer: "[DeNA Tech - connpass](https://dena.connpass.com/), [Frontend Up! 〜放課後LT大会！（クイズもあるよ！）〜 - connpass](https://dena.connpass.com/event/339749/)" -->
 <!-- _paginate: false -->
 
 ---

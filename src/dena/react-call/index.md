@@ -3,7 +3,7 @@ marp: true
 theme: ykicchan
 class: invert
 paginate: true
-image: https://ykicchan.github.io/slides/draft/react-call/index.png
+image: https://ykicchan.github.io/slides/dena/react-call/index.png
 title: react-call というライブラリがアツい！！！
 description: react-call の概要や使い方について紹介するスライド資料
 keywords: React, ReactNative, modal, react-call
@@ -17,7 +17,7 @@ keywords: React, ReactNative, modal, react-call
 @yKicchan
 :::
 
-<!-- _footer: "Draft" -->
+<!-- _footer: "[Frontend Up! 〜放課後LT大会！（クイズもあるよ！）〜](https://dena.connpass.com/event/339749/) / 2025.2.21" -->
 <!-- _paginate: false -->
 
 ---
@@ -33,7 +33,7 @@ keywords: React, ReactNative, modal, react-call
 | 職 | Web Frontend                        |
 | X | [@yKicchan](https://x.com/yKicchan) |
 
-![bg w:512 right](./images/icon.png)
+![bg w:512 right](images/icon.png)
 
 ---
 
@@ -42,7 +42,7 @@ keywords: React, ReactNative, modal, react-call
 1. [`react-call` とは](#4){.white}
 2. [`react-call` の使い方](#9){.white}
 3. [いいところ](#13){.white}
-4. [まとめ](#19){.white}
+4. [まとめ](#21){.white}
 {.fit}
 
 ---
@@ -55,7 +55,7 @@ keywords: React, ReactNative, modal, react-call
 
 <!-- header: "1. react-call とは" -->
 
-[![demo w:1024](./images/demo.png)](https://react-call.desko.dev/)
+[![demo w:1024](images/demo.png)](https://react-call.desko.dev/)
 
 <!-- _footer: "[react-call | Call your React components](https://react-call.desko.dev/)" -->
 
@@ -223,7 +223,36 @@ return (
 );
 ```
 
-こういう `useState` が不要になり責務がスッキリする{.note .fit .text-xs}
+こういう `useState` が不要になり責務がスッキリする{.note .fit .text-xs2}
+
+---
+
+#### 呼び出し側からも更新/終了できる
+
+```tsx {.text-xs}
+const promise = Alert.call({ message: 'Starting operation...' })
+
+await asyncOperation()
+
+Alert.update(promise, { message: 'Completed!' })
+setTimeout(() => Alert.end(promise), 3000)
+```
+
+`promise` を渡して特定の呼び出しに対して更新/終了できる{.note .fit .text-xs2}
+
+---
+
+#### 呼び出し側からも更新/終了できる
+
+```tsx {.text-xs}
+// すべての Confirm を終了させる
+Confirm.end(false)
+
+// すべての Alert を更新する
+Alert.update({ message: 'Completed!' })
+```
+
+一度に呼び出す数が一つだけの場合もこの方がスッキリする{.tip .fit .text-xs2}
 
 ---
 
@@ -334,14 +363,14 @@ const response = await Confirm.call();
 
 - `react-call` は==手続き的=={.yellow}にコンポーネントを呼び出せる
 - `Promise` を利用した==シンプルな IF で簡単に利用=={.green}できる
-- ==終了アニメーション=={.blue}や==ネスト=={.blue}等のユースケースにも対応可能
+- ==外からの更新/終了=={.blue}や==終了アニメーション=={.blue}等のユースケースにも対応可能
 {.text-sm}
 
 ---
 
 ### もう少し詳しい情報
 
-[![zenn w:768](./images/zenn.png)](https://zenn.dev/ykicchan/articles/5415871c017b22)
+[![zenn w:768](images/zenn.png)](https://zenn.dev/ykicchan/articles/5415871c017b22)
 
 <!-- _footer: "[React で Modal や Confirm の実装を簡単にする react-call というライブラリがアツい！！！](https://zenn.dev/ykicchan/articles/5415871c017b22)" -->
 

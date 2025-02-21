@@ -37,12 +37,18 @@ keywords: React, ReactNative, modal, react-call
 
 ---
 
+[![zenn w:768](images/zenn.png)](https://zenn.dev/ykicchan/articles/5415871c017b22)
+
+<!-- _footer: "[React で Modal や Confirm の実装を簡単にする react-call というライブラリがアツい！！！](https://zenn.dev/ykicchan/articles/5415871c017b22)" -->
+
+---
+
 ## 目次
 
-1. [`react-call` とは](#4){.white}
-2. [`react-call` の使い方](#9){.white}
-3. [いいところ](#13){.white}
-4. [まとめ](#21){.white}
+1. [`react-call` とは](#5){.white}
+2. [`react-call` の使い方](#10){.white}
+3. [いいところ](#14){.white}
+4. [まとめ](#22){.white}
 {.fit}
 
 ---

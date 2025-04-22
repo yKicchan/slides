@@ -454,7 +454,7 @@ type Optional<T> = {
 
 ---
 
-### もう少し詳しい情報
+### 見返す用
 
 [![zenn w:768](images/zenn.png)](https://zenn.dev/dena/articles/328b6655439845)
 
